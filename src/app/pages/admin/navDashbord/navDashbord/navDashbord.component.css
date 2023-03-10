@@ -1,0 +1,96 @@
+.bg{
+  background-color: #96532e;
+  color: white;
+}
+.navigate{
+
+  position: fixed;
+  width: 300px;
+  height: 100%;
+}
+
+.navigate ul{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigate ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  /* border: 1px solid saddlebrown;
+
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px; */
+
+}
+
+.navigate ul li:hover a{
+
+  background-color: white;
+  color: #96532e;
+}
+.navigate ul li a{
+
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  position: relative;
+  display: flex;
+  font-size: 1.2rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+}
+.navigate ul li a .titlee{
+
+  position: relative;
+  display: block;
+  padding: 0px 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+
+}
+.navigate ul li a .iconn{
+  position: relative;
+  display: block;
+  padding: 0px 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+
+}
+
+.navigate ul li:hover a::before{
+
+  content: '';
+  position:absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color:transparent;
+  box-shadow: 35px 35px 0px 10px white;
+
+}
+.navigate ul li:hover a::after{
+
+  content: '';
+  position:absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color:transparent;
+  box-shadow: 35px -35px 0px 10px white;
+
+}
+

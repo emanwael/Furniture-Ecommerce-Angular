@@ -1,0 +1,58 @@
+<div class="containerr p-5 ">
+  <h1 class=" text-center fw-bold fs-1">{{id? 'Edit product' : 'Add new product'}}</h1>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" class="row  justify-content-center mt-5 ">
+    <div class=" col-10 my-1 ">
+      <label for="name">Name</label>
+      <input id="name" type="text" class=" input" formControlName="name">
+      <ng-container *ngIf=" getName.touched">
+        <p *ngIf=" getName.hasError('required')" class=" text-danger">Name is requried</p>
+
+      </ng-container>
+
+
+    </div>
+    <div class=" col-10 my-1 ">
+
+      <label for="srcimg">Src image</label>
+      <input id="srcimg" type="text" class=" input" formControlName="img">
+      <ng-container *ngIf=" getSrcImg.touched">
+        <p *ngIf=" getSrcImg.hasError('required')" class=" text-danger">Src image is requried</p>
+
+      </ng-container>
+
+    </div>
+    <div class=" col-10 my-1 ">
+      <label for="price">Price</label>
+      <input id="price" type="text" class=" input" formControlName="price">
+      <ng-container *ngIf=" getPrice.touched">
+        <p *ngIf=" getPrice.hasError('required')" class=" text-danger">Price is requried</p>
+
+      </ng-container>
+
+    </div>
+
+    <div class=" col-10 my-1 ">
+      <label for="qauntity">Qauntity</label>
+      <input id="qauntity" type="text" class=" input" formControlName="qauntity">
+      <ng-container *ngIf=" getQauntitiy.touched">
+        <p *ngIf=" getQauntitiy.hasError('required')" class=" text-danger">Qauntity is requried</p>
+
+      </ng-container>
+
+    </div>
+    <div class=" col-10 my-2 ">
+
+      <label for="desc">Description</label>
+      <textarea name="" id="desc" cols="50" rows="10" class=" d-block" formControlName="desc"></textarea>
+      <ng-container *ngIf=" getDescription.touched">
+        <p *ngIf=" getDescription.hasError('required')" class=" text-danger">Description is requried</p>
+
+      </ng-container>
+
+    </div>
+
+    <button type="submit" class=" btn btn-dark col-4 mt-5">{{id? 'Edit product' : 'Add new product'}}</button>
+  </form>
+
+</div>

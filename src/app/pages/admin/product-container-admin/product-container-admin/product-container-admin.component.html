@@ -1,0 +1,12 @@
+<div class="container p-5">
+  <h1 class=" text-center fw-bold fs-1">All products</h1>
+
+
+  <div class=" row ">
+    <app-product-item-admin *ngFor="let prodctItem of products" [product]="prodctItem"
+      class="col-lg-3 col-md-6 col-sm-6  mt-3">
+    </app-product-item-admin>
+
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class=" p-0 text-start">
+  <img [src]="product.img" class="card-img-top img " alt="...">
+  <div class="card-body">
+    <div class="row justify-content-center text-center  my-2">
+      <a class="col-6 text-primary btn" href="" style="text-decoration: none;"
+        [routerLink]="['/admin/edit/',product.id]">
+        <i class="fa-solid fa-pen-to-square "></i>
+
+      </a>
+      <button class="col-6 text-danger btn" href="" style="text-decoration: none;" (click)="delete()">
+        <i class="fa-solid fa-trash "></i>
+
+      </button>
+    </div>
+    <p class="card-text "><span class=" fw-bold"> name : </span>{{product.name}}</p>
+    <p class="card-text "><span class=" fw-bold"> price :</span>{{product.price}}$</p>
+    <p class="card-text "><span class=" fw-bold"> Quantity :</span>{{product.qauntity}}</p>
+    <a href="" class=" nav-link text-center bg text-light rounded">view all details</a>
+
+
+  </div>

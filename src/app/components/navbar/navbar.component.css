@@ -1,0 +1,36 @@
+*{
+
+  font-size: 1.2rem;
+}
+
+.bg-nav{
+  background-color: #96532e;
+}
+.car{
+  right: 0;
+}
+.logo{
+
+  height: 200px;
+  width: 200px;
+}
+.nav-style{
+}
+.nav-style a{
+  display: inline-block;
+  margin: 10px;
+}
+.nav-link:hover {
+
+  background-color: #96532e;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cont{
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,25 @@
+
+
+  <div class=" p-0 text-center" >
+    <img [src]="product.img" class="card-img-top img " alt="...">
+    <div class="card-body">
+      <p class="card-text  fw-bold fs-3 ">{{product.name}}</p>
+      <div class="row">
+        <p class="card-text col-6 ">{{product.price}}$</p>
+        <i class="fa-solid fa-cart-plus col-6  "
+        [ngClass]= "{ ' text-dark' : product.qauntity !=0,
+        '             text-danger' : product.qauntity ==0}" (click)="addToCar()"></i>
+      </div>
+      <div [ngSwitch]="product.qauntity" >
+        <p *ngSwitchCase="0" class=" text-danger">not available</p>
+        <!-- <p *ngSwitchCase="1" class=" text-warning">only one product</p>
+        <p *ngSwitchDefault class=" text-secondary">Quantity :{{product.qauntity}}</p> -->
+      </div>
+      <!-- <button class="btn "
+      [ngClass]= "{ 'btn-dark' : product.qauntity !=0,
+                    'btn-danger' : product.qauntity ==0}">
+        {{product.qauntity ==0 ?'sold out':'Buy Now'}}</button> -->
+    </div>
+  </div>
+
+

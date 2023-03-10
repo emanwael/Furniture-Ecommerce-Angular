@@ -1,0 +1,14 @@
+<div class="container p-5">
+  <h1 class=" text-center fw-bold fs-1">Most Popular Products</h1>
+  <a class=" nav-link text-center mt-3" (click)="goToAllProdicts()" [routerLink]="['/home/products']">view all Products
+    &rarr;</a>
+
+
+  <div class=" row ">
+    <app-produt-item *ngFor="let prodctItem of products" [product]="prodctItem"
+      class="col-lg-3 col-md-4 col-sm-6  mt-3">
+    </app-produt-item>
+
+  </div>
+
+</div>
